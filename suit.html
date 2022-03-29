@@ -1,0 +1,170 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Website hasil chalenge 1 Binar Academy">
+    <meta name="keywords" content="HTML, CSS, BkctuccOnXzSN5dHGpYGkAMB">
+  <meta name="author" content="Dira">
+  <!--Title-->
+  <title>Suit</title>
+  <!--Favicon-->
+  <link rel="stylesheet" href="suit.css">
+  <link rel="icon" href="assets/logo 1.png">
+</head>
+
+<body >
+
+    <!--Top Navigation-->
+    <header>
+        <div class="back">
+            <h1>
+                <a href="index.html">
+                    < 
+                </a>
+            </h1>
+        </div>
+        <div class="brand">
+            <img src="assets/logo 1.png" alt="logo" class="logo">
+            <h1>ROCK PAPER SCISSORS</h1>
+        </div>
+    </header>
+
+    <!--Game Section-->
+    <section>
+        <div class="game-area">
+            <!--Player-->
+            <div class="user-choice">
+                <h1>Secore : <span id="psecore">0</span></h1>
+                <h1 class="player-name">PLAYER 1</h1>
+                <div class="used">
+                <button class="user-tool your-tool dissap" id="r-user">
+                    <img class="tool" src="assets/batu 1.png" alt="batu">
+                </button>
+                <button class="user-tool your-tool dissap" id="p-user">
+                    <img class="tool" src="assets/kertas 1.png" alt="kertas">
+                </button>
+                <button class="user-tool your-tool dissap" id="s-user">
+                    <img class="tool" src="assets/gunting 1.png" alt="gunting">
+                </button>
+                </div>
+            </div>
+
+
+            <div class="Versus-Reset">
+                <div class="boxR" id="box">
+                    <h1 id="h1">VS</h1>
+                </div>
+                <!--For Refresh-->
+                <div class="refresh">
+                    <img id="refresh" src="assets/refresh 2.png">
+                </div>
+            </div>
+
+            <!--Com Play-->
+            <div class="Com-Choice">
+                <h1>Secore : <span id="csecore">0</span></h1>
+                <h1 class="player-name">COM</h1>
+                <div class="used">
+                <button class="user-tool dissap" id="r-com">
+                    <img src="assets/batu 1.png" alt="batu" >
+                </button>
+                <button class="user-tool dissap" id="p-com">
+                    <img src="assets/kertas 1.png" alt="kertas" >
+                </button>
+                <button class="user-tool dissap" id="s-com">
+                    <img src="assets/gunting 1.png" alt="gunting" >
+                </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- <script>
+        let uoption;
+        let coption;
+        let result = document.getElementById('hasil');
+        let options = ['Batu', 'Gunting', 'Kertas'];
+
+        function reset() {
+            uoption = '';
+            coption = '';
+            reset.classList.remove()
+        }
+        
+        function cekWin() {
+            if(uoption == 'Batu' && coption == 'Batu') {
+                console.log('DRAW');
+                result.innerHTML = "DRAW";
+                result.style.color = 'white';
+                result.style.backgroundColor = 'lime';
+                result.classList.add('alert','alert-success');
+            } else if(uoption == 'Batu' && coption == 'Gunting') {
+                console.log('PLAYER WIN');
+                result.innerHTML = "PLAYER WIN";
+                result.style.color = 'white';
+                result.style.backgroundColor = 'lime';
+                result.classList.add('alert','alert-success');
+            } else if(uoption == 'Batu' && coption == 'Kertas') {
+                console.log('COM WIN');
+                result.innerHTML = "COM WIN";
+                result.classList.add('alert','alert-success');
+            } else if(uoption == 'Gunting' && coption == 'Gunting') {
+                console.log('DRAW');
+                result.innerHTML = "DRAW";
+                result.classList.add('alert','alert-success');
+            } else if(uoption == 'Gunting' && coption == 'Kertas') {
+                console.log('PLAYER WIN');
+                result.innerHTML = "PLAYER WIN";
+                result.classList.add('alert','alert-success');
+            } else if(uoption == 'Gunting' && coption == 'Batu') {
+                console.log('COM WIN');
+                result.innerHTML = "COM WIN";
+                result.classList.add('alert','alert-success');
+            } else if(uoption == 'Kertas' && coption == 'Kertas') {
+                console.log('DRAW');
+                result.innerHTML = "DRAW";
+                result.classList.add('alert','alert-success');
+            } else if(uoption == 'Kertas' && coption == 'Batu') {
+                console.log('PLAYER WIN');
+                result.innerHTML = "PLAYER WIN";
+                result.classList.add('alert','alert-success');
+            } else if(uoption == 'Kertas' && coption == 'Gunting') {
+                console.log('COM WIN');
+                result.innerHTML = "COM WIN";
+                result.classList.add('alert','alert-success');
+            }
+        }
+        function userTurn(ank) {
+            element = document.getElementsByClassName('uoption');
+            for(i = 0; i < element.length; i++) {
+                element[i].classList.remove('option-active');
+            }
+            element[ank].classList.add('option-active');
+            uoption = options[ank];
+            console.log(uoption);
+            comTurn();
+            cekWin();
+
+        }
+
+        function comTurn() {
+            ank = Math.floor(Math.random() * 3);
+            element = document.getElementsByClassName('coption');
+            for(i = 0; i < element.length; i++) {
+                element[i].classList.remove('option-active');
+            }
+            element[ank].classList.add('option-active');
+            coption = options[ank];
+            console.log(coption);
+        }
+        
+
+    </script> -->
+    <script src="suit.js"></script>
+</body>
+
+</html>
